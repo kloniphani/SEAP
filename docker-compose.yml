@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  seap:
+    image: ${DOCKER_REGISTRY-}seap
+    build:
+      context: .\SEAP
+      dockerfile: Dockerfile
