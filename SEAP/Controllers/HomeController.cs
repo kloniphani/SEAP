@@ -26,5 +26,15 @@ namespace SEAP.Controllers
 
 			return View();
 		}
+
+		public ActionResult Assessors()
+		{
+			return View();
+		}
+
+		public ActionResult Student()
+		{
+			return View();
+		}
 	}
 }
