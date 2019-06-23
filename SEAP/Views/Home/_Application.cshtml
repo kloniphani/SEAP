@@ -1,55 +1,39 @@
 ﻿<div class='toggle'>
-	<div class='panels'>
+    <div class='panels'>
+        <!-- PANEL 1 -->
         <div class='panel'>
-            <!-- name -->
+            <!-- Project Title -->
             <div class="first-line">
                 <div class="span6 main-row">
                     <div class="input">
 
-                        <input type="text" id="first_name" name="first_name" placeholder="First name">
-                    </div>
-                </div>
-                <div class="span6 main-row">
-                    <div class="input">
-
-                        <input type="text" id="last_name" name="last_name" placeholder="Last name">
+                        <input type="text" id="proj_name" name="proj_name" placeholder="Project Title">
                     </div>
                 </div>
             </div>
-            <!-- end name -->
-            <!-- email n phone -->
-            <div class="first-line">
-                <div class="span6 main-row">
-                    <div class="input">
-
-                        <input type="email" placeholder="Email" id="email" name="email">
-                    </div>
-                </div>
-                <div class="span6 main-row">
-                    <div class="input">
-
-                        <input type="text" placeholder="Phone" id="phone" name="phone">
-                    </div>
-                </div>
-            </div>
-            <!-- start address -->
+            <!-- start description -->
             <div class="main-row">
                 <div class="input">
-
-                    <input type="text" id="address" placeholder="Address" name="address">
+                    <textarea placeholder="Additional info" spellcheck="true" name="description"></textarea>
+                    <span class="tooltip tooltip-right-top">Project Abstract / Description</span>
                 </div>
             </div>
-            <!-- end address -->
-            <!-- start post code -->
-            <div class="first-line">
-                <div class="span8 main-row">
-                    <div class="input">
-                        <input type="text" id="city" placeholder="City" name="city">
-                    </div>
-                </div>
-
+            <!-- end description -->
+            
+            <!-- start ethicsType -->
+            <div class="main-row">
+                <label class="input select">
+                    <select name="ethicsType">
+                        <option value="none" selected="" disabled="">Select Ethics Category</option>
+                        <option value="human">Humanities</option>
+                        <option value="animals">Animals</option>
+                        <option value="environ">Environment</option>                        
+                    </select>
+                    <i></i>
+                </label>
             </div>
-            <!-- end city post code -->
+            <!-- end ethics -->
+
             <!-- start Faculty -->
             <div class="main-row">
                 <label class="input select">
@@ -65,6 +49,7 @@
                 </label>
             </div>
             <!-- end Faculty -->
+
             <!-- start Department-->
             <div class="main-row">
                 <label class="input select">
@@ -80,36 +65,85 @@
                 </label>
             </div>
             <!-- end Department -->
-            <!-- start position -->
-            <div class="main-row">
-                <label class="input select">
-                    <select name="position">
-                        <option value="none" selected disabled="">Choose desired position</option>
-                        <option value="tech lead">Operator</option>
-                        <option value="product manager"> Manager</option>
-                        <option value="senior developer"> Developer</option>
-                        <option value="QA specialist">Designer</option>
-                    </select>
-                    <i></i>
-                </label>
-            </div>
-            <!-- end position -->
-            <!-- start message -->
-            <div class="main-row">
+
+            <!-- Supervisor -->
+            <div class="span6 main-row">
                 <div class="input">
-                    <textarea placeholder="Additional info" spellcheck="false" name="message"></textarea>
-                    <span class="tooltip tooltip-right-top">Key Skills</span>
+
+                    <input type="text" id="spv_name" name="spv_name" placeholder="Supervisor's Name ">
                 </div>
             </div>
-            <!-- end message -->
 
+            <!-- supv email n phone -->
+            <div class="first-line">
+                <div class="span6 main-row">
+                    <div class="input">
+                        <input type="email" placeholder="Email" id="sup_email" name="sup_email">
+                    </div>
+                </div>
+                <div class="span6 main-row">
+                    <div class="input">
 
+                        <input type="text" placeholder="Phone" id="sup_phone" name="sup_phone">
+                    </div>
+                </div>
+            </div>
+            <!-- start address -->
+            <div class="main-row">
+                <div class="input">
 
+                    <input type="text" id="address" placeholder="sup_Address" name="sup_address">
+                </div>
+            </div>
+            <!-- end address -->
+            <!-- start post code -->
+            <div class="first-line">
+                <div class="span8 main-row">
+                    <div class="input">
+                        <input type="text" id="city" placeholder="sup_City" name="sup_city">
+                    </div>
+                </div>
+            </div>
+            <!-- end city post code -->
         </div>
-		<div class='panel'>Panel 2</div>
-		<div class='panel'>Panel 3</div>
-		<div class='panel'>Panel 4</div>
-	</div>
+
+        <div class='panel'>
+            <!--HUMAN ETHICS-->
+            <div class="wrapper">
+                <h2>Gender of Participants</h2>
+                <input type="radio" name="male" value="1">Male</input>
+                <input type="radio" name="female" value="2">Female</input>
+            </div>
+
+            <div class="wrapper">
+                <h2>Group of Participants:</h2>
+                <input type="radio" name="Elementary" value="1">Elementary</input>
+                <input type="radio" name="Primary" value="2">Primary</input>
+                <input type="radio" name="Secondary" value="2">Secondary</input>
+                <input type="radio" name="Tertiary" value="2">Tertiary</input>
+            </div>
+
+            <!-- participant description -->
+            <div class="main-row">
+                <div class="input">
+                    <textarea placeholder="Additional info" spellcheck="true" name="participants"></textarea>
+                    <span class="tooltip tooltip-right-top">Describe the participants of this project </span>
+                </div>
+            </div>
+            <!-- end description -->
+
+            <!-- other details description -->
+            <div class="main-row">
+                <div class="input">
+                    <textarea placeholder="Additional info" spellcheck="true" name="other_details"></textarea>
+                    <span class="tooltip tooltip-right-top">Other related details </span>
+                </div>
+            </div>
+            <!-- end description -->
+
+            <div class='panel'>Panel 3</div>
+            <div class='panel'>Panel 4</div>
+        </div>
 	<div class='tabs'>
 		<div class='tab active'>Tab 1</div>
 		<div class='tab'>Tab 2</div>
@@ -117,3 +151,10 @@
 		<div class='tab'>Tab 4</div>
 	</div>
 </div>
+
+
+
+
+
+
+
