@@ -1,231 +1,229 @@
-﻿<div class='toggle'>
-    <div class='panels'>
-        <!-- PANEL 1 -->
-        <div class='panel'>
-            <!-- Project Title -->
-            <div class="first-line">
-                <div class="span6 main-row">
-                    <div class="input">
+﻿<section class="ftco-section">
+	<div class="container">
+		<div class='toggle'>
+			<div class='panels'>
+				<!-- PANEL 1 -->
+				<div class='panel'>
+					<!-- Project Title -->
+					<div class="first-line">
+						<div class="span6 main-row">
+							<div class="input">
 
-                        <input type="text" id="proj_name" name="proj_name" placeholder="Project Title">
-                    </div>
-                </div>
-            </div>
-            <!-- start description -->
-            <div class="main-row">
-                <div class="input">
-                    <textarea placeholder="Additional info" spellcheck="true" name="description"></textarea>
-                    <span class="tooltip tooltip-right-top">Project Abstract / Description</span>
-                </div>
-            </div>
-            <!-- end description -->
-            
-            <!-- start ethicsType -->
-            <div class="main-row">
-                <label class="input select">
-                    <select name="ethicsType">
-                        <option value="none" selected="" disabled="">Select Ethics Category</option>
-                        <option value="human">Humanities</option>
-                        <option value="animals">Animals</option>
-                        <option value="environ">Environment</option>                        
-                    </select>
-                    <i></i>
-                </label>
-            </div>
-            <!-- end ethics -->
+								<input type="text" id="proj_name" name="proj_name" placeholder="Project Title">
+							</div>
+						</div>
+					</div>
+					<!-- start description -->
+					<div class="main-row">
+						<div class="input">
+							<textarea placeholder="Additional info" spellcheck="true" name="description"></textarea>
+							<span class="tooltip tooltip-right-top">Project Abstract / Description</span>
+						</div>
+					</div>
+					<!-- end description -->
+					<!-- start ethicsType -->
+					<div class="main-row">
+						<label class="input select">
+							<select name="ethicsType">
+								<option value="none" selected="" disabled="">Select Ethics Category</option>
+								<option value="human">Humanities</option>
+								<option value="animals">Animals</option>
+								<option value="environ">Environment</option>
+							</select>
+							<i></i>
+						</label>
+					</div>
+					<!-- end ethics -->
+					<!-- start Faculty -->
+					<div class="main-row">
+						<label class="input select">
+							<select name="Faculty">
+								<option value="none" selected="" disabled="">Select Faculty</option>
+								<option value="Natural Science">Natural Sciences</option>
+								<option value="Law">Law</option>
+								<option value="Pharmacy">Pharmacy</option>
+								<option value="Education">Education</option>
+								<option value="Medical Sciences">Medical Science</option>
+							</select>
+							<i></i>
+						</label>
+					</div>
+					<!-- end Faculty -->
+					<!-- start Department-->
+					<div class="main-row">
+						<label class="input select">
+							<select name="Department">
+								<option value="none" selected="" disabled="">Select Department</option>
+								<option value="Computer">Computer Sciences</option>
+								<option value="Law">Law</option>
+								<option value="Pharmacy">Pharmacy</option>
+								<option value="Information">Information Systems</option>
+								<option value="Econ">Economics</option>
+							</select>
+							<i></i>
+						</label>
+					</div>
+					<!-- end Department -->
+					<!-- Supervisor -->
+					<div class="span6 main-row">
+						<div class="input">
 
-            <!-- start Faculty -->
-            <div class="main-row">
-                <label class="input select">
-                    <select name="Faculty">
-                        <option value="none" selected="" disabled="">Select Faculty</option>
-                        <option value="Natural Science">Natural Sciences</option>
-                        <option value="Law">Law</option>
-                        <option value="Pharmacy">Pharmacy</option>
-                        <option value="Education">Education</option>
-                        <option value="Medical Sciences">Medical Science</option>
-                    </select>
-                    <i></i>
-                </label>
-            </div>
-            <!-- end Faculty -->
+							<input type="text" id="spv_name" name="spv_name" placeholder="Supervisor's Name ">
+						</div>
+					</div>
 
-            <!-- start Department-->
-            <div class="main-row">
-                <label class="input select">
-                    <select name="Department">
-                        <option value="none" selected="" disabled="">Select Department</option>
-                        <option value="Computer">Computer Sciences</option>
-                        <option value="Law">Law</option>
-                        <option value="Pharmacy">Pharmacy</option>
-                        <option value="Information">Information Systems</option>
-                        <option value="Econ">Economics</option>
-                    </select>
-                    <i></i>
-                </label>
-            </div>
-            <!-- end Department -->
+					<!-- supv email n phone -->
+					<div class="first-line">
+						<div class="span6 main-row">
+							<div class="input">
+								<input type="email" placeholder="Email" id="sup_email" name="sup_email">
+							</div>
+						</div>
+						<div class="span6 main-row">
+							<div class="input">
 
-            <!-- Supervisor -->
-            <div class="span6 main-row">
-                <div class="input">
+								<input type="text" placeholder="Phone" id="sup_phone" name="sup_phone">
+							</div>
+						</div>
+					</div>
+					<!-- start address -->
+					<div class="main-row">
+						<div class="input">
 
-                    <input type="text" id="spv_name" name="spv_name" placeholder="Supervisor's Name ">
-                </div>
-            </div>
+							<input type="text" id="address" placeholder="sup_Address" name="sup_address">
+						</div>
+					</div>
+					<!-- end address -->
+					<!-- start post code -->
+					<div class="first-line">
+						<div class="span8 main-row">
+							<div class="input">
+								<input type="text" id="city" placeholder="sup_City" name="sup_city">
+							</div>
+						</div>
+					</div>
+					<!-- end city post code -->
+				</div>
 
-            <!-- supv email n phone -->
-            <div class="first-line">
-                <div class="span6 main-row">
-                    <div class="input">
-                        <input type="email" placeholder="Email" id="sup_email" name="sup_email">
-                    </div>
-                </div>
-                <div class="span6 main-row">
-                    <div class="input">
+				<div class='panel'>
+					<div AnimalEthics>
+						<!--ANIMAL ETHICS-->
+						<div class="wrapper">
+							Class of Annimals
+							<input type="radio" name="land" value="1">Land</input>
+							<input type="radio" name="sea" value="2">Sea</input>
+							<input type="radio" name="air" value="2">Air</input>
+						</div>
 
-                        <input type="text" placeholder="Phone" id="sup_phone" name="sup_phone">
-                    </div>
-                </div>
-            </div>
-            <!-- start address -->
-            <div class="main-row">
-                <div class="input">
+						<div class="wrapper">
+							sources and Habitat:
+							<input type="radio" name="wild" value="1">Wild</input>
+							<input type="radio" name="bred" value="2">In bred</input>
+							<input type="radio" name="Captivity" value="2">Captivity</input>
+							<input type="radio" name="Zoo" value="2">Zoo</input>
+						</div>
 
-                    <input type="text" id="address" placeholder="sup_Address" name="sup_address">
-                </div>
-            </div>
-            <!-- end address -->
-            <!-- start post code -->
-            <div class="first-line">
-                <div class="span8 main-row">
-                    <div class="input">
-                        <input type="text" id="city" placeholder="sup_City" name="sup_city">
-                    </div>
-                </div>
-            </div>
-            <!-- end city post code -->
-        </div>
+						<!-- participant description -->
+						<div class="main-row">
+							<div class="input">
+								<textarea placeholder="Additional info" spellcheck="true" name="aniparticipants"></textarea>
+								<span class="tooltip tooltip-right-top">Describe the details of the kind of annimals being considered </span>
+							</div>
+						</div>
+						<!-- end description -->
+						<!-- other details description -->
+						<div class="main-row">
+							<div class="input">
+								<textarea placeholder="Additional info" spellcheck="true" name="other_details"></textarea>
+								<span class="tooltip tooltip-right-top">Other related details </span>
+							</div>
+						</div>
+						<!-- end description -->
+					</div>
 
-        <div class='panel'>
-            <div AnimalEthics>
-                <!--ANIMAL ETHICS-->
-                <div class="wrapper">
-                    Class of Annimals
-                    <input type="radio" name="land" value="1">Land</input>
-                    <input type="radio" name="sea" value="2">Sea</input>
-                    <input type="radio" name="air" value="2">Air</input>
-                </div>
+					<div humanEthics>
+						<!--HUMAN ETHICS-->
+						<div class="wrapper">
+							Gender of Participants
+							<input type="radio" name="male" value="1">Male</input>
+							<input type="radio" name="female" value="2">Female</input>
+						</div>
 
-                <div class="wrapper">
-                    sources and Habitat:
-                    <input type="radio" name="wild" value="1">Wild</input>
-                    <input type="radio" name="bred" value="2">In bred</input>
-                    <input type="radio" name="Captivity" value="2">Captivity</input>
-                    <input type="radio" name="Zoo" value="2">Zoo</input>
-                </div>
+						<div class="wrapper">
+							Group of Participants:
+							<input type="radio" name="Elementary" value="1">Elementary</input>
+							<input type="radio" name="Primary" value="2">Primary</input>
+							<input type="radio" name="Secondary" value="2">Secondary</input>
+							<input type="radio" name="Tertiary" value="2">Tertiary</input>
+						</div>
 
-                <!-- participant description -->
-                <div class="main-row">
-                    <div class="input">
-                        <textarea placeholder="Additional info" spellcheck="true" name="aniparticipants"></textarea>
-                        <span class="tooltip tooltip-right-top">Describe the details of the kind of annimals being considered </span>
-                    </div>
-                </div>
-                <!-- end description -->
-                <!-- other details description -->
-                <div class="main-row">
-                    <div class="input">
-                        <textarea placeholder="Additional info" spellcheck="true" name="other_details"></textarea>
-                        <span class="tooltip tooltip-right-top">Other related details </span>
-                    </div>
-                </div>
-                <!-- end description -->
-            </div>
+						<!-- participant description -->
+						<div class="main-row">
+							<div class="input">
+								<textarea placeholder="Additional info" spellcheck="true" name="participants"></textarea>
+								<span class="tooltip tooltip-right-top">Describe the participants of this project </span>
+							</div>
+						</div>
+						<!-- end description -->
+						<!-- other details description -->
+						<div class="main-row">
+							<div class="input">
+								<textarea placeholder="Additional info" spellcheck="true" name="other_details"></textarea>
+								<span class="tooltip tooltip-right-top">Other related details </span>
+							</div>
+						</div>
+						<!-- end description -->
+					</div>
 
-            <div humanEthics>
-                <!--HUMAN ETHICS-->
-                <div class="wrapper">
-                    Gender of Participants
-                    <input type="radio" name="male" value="1">Male</input>
-                    <input type="radio" name="female" value="2">Female</input>
-                </div>
+					<div environEthics>
+						<!--ENVIRON ETHICS-->
+						<div class="wrapper">
+							Area of Interest:
+							<input type="radio" name="community" value="1">Community</input>
+							<input type="radio" name="rural" value="2">Rural</input>
+							<input type="radio" name="urban" value="2">Urban</input>
+						</div>
 
-                <div class="wrapper">
-                    Group of Participants:
-                    <input type="radio" name="Elementary" value="1">Elementary</input>
-                    <input type="radio" name="Primary" value="2">Primary</input>
-                    <input type="radio" name="Secondary" value="2">Secondary</input>
-                    <input type="radio" name="Tertiary" value="2">Tertiary</input>
-                </div>
+						<div class="wrapper">
+							Focus of study:
+							<input type="radio" name="airpol" value="1">Air Quality</input>
+							<input type="radio" name="water" value="2">Water</input>
+							<input type="radio" name="industries" value="2">Industries </input>
+						</div>
 
-                <!-- participant description -->
-                <div class="main-row">
-                    <div class="input">
-                        <textarea placeholder="Additional info" spellcheck="true" name="participants"></textarea>
-                        <span class="tooltip tooltip-right-top">Describe the participants of this project </span>
-                    </div>
-                </div>
-                <!-- end description -->
-                <!-- other details description -->
-                <div class="main-row">
-                    <div class="input">
-                        <textarea placeholder="Additional info" spellcheck="true" name="other_details"></textarea>
-                        <span class="tooltip tooltip-right-top">Other related details </span>
-                    </div>
-                </div>
-                <!-- end description -->
-            </div>
+						<!-- participant description -->
+						<div class="main-row">
+							<div class="input">
+								<textarea placeholder="Additional info" spellcheck="true" name="environDetails"></textarea>
+								<span class="tooltip tooltip-right-top">Describe the Environmental effect of this project </span>
+							</div>
+						</div>
+						<!-- end description -->
+						<!-- other details description -->
+						<div class="main-row">
+							<div class="input">
+								<textarea placeholder="Additional info" spellcheck="true" name="other_details"></textarea>
+								<span class="tooltip tooltip-right-top">Other related details </span>
+							</div>
+						</div>
+						<!-- end description -->
+					</div>
 
-            <div environEthics>
-                <!--ENVIRON ETHICS-->
-                <div class="wrapper">
-                    Area of Interest: 
-                    <input type="radio" name="community" value="1">Community</input>
-                    <input type="radio" name="rural" value="2">Rural</input>
-                    <input type="radio" name="urban" value="2">Urban</input>
-                </div>
+					<div class='panel'>Panel 3 - Policies </div>
 
-                <div class="wrapper">
-                    Focus of study:
-                    <input type="radio" name="airpol" value="1">Air Quality</input>
-                    <input type="radio" name="water" value="2">Water</input>
-                    <input type="radio" name="industries" value="2">Industries </input>                    
-                </div>
+					<div class='panel'>Panel 4 - Review and Submit</div>
+				</div>
 
-                <!-- participant description -->
-                <div class="main-row">
-                    <div class="input">
-                        <textarea placeholder="Additional info" spellcheck="true" name="environDetails"></textarea>
-                        <span class="tooltip tooltip-right-top">Describe the Environmental effect of this project </span>
-                    </div>
-                </div>
-                <!-- end description -->
-                <!-- other details description -->
-                <div class="main-row">
-                    <div class="input">
-                        <textarea placeholder="Additional info" spellcheck="true" name="other_details"></textarea>
-                        <span class="tooltip tooltip-right-top">Other related details </span>
-                    </div>
-                </div>
-                <!-- end description -->
-            </div>
-
-            <div class='panel'>Panel 3 - Policies </div>
-            
-            <div class='panel'>Panel 4 - Review and Submit</div>
-        </div>
-	<div class='tabs'>
-		<div class='tab active'>Tab 1</div>
-		<div class='tab'>Tab 2</div>
-		<div class='tab'>Tab 3</div>
-		<div class='tab'>Tab 4</div>
-	</div>
-</div>
-
-
-
-
+			</div>
+			<div class='tabs'>
+				<div class='tab active'>Tab 1</div>
+				<div class='tab'>Tab 2</div>
+				<div class='tab'>Tab 3</div>
+				<div class='tab'>Tab 4</div>
+			</div>
+		</div>
+	 </div>
+ </section>
 
 
 

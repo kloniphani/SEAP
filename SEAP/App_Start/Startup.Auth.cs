@@ -45,24 +45,24 @@ namespace SEAP
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
-            // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+			// Uncomment the following lines to enable logging in with third party login providers
+			//app.UseMicrosoftAccountAuthentication(
+			//    clientId: "",
+			//    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+			//app.UseTwitterAuthentication(
+			//   consumerKey: "",
+			//   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+			//app.UseFacebookAuthentication(
+			//   appId: "",
+			//   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
-        }
-    }
+			app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+			{
+			    ClientId = "610452632944-stuus0su69dk6oj7g7r4js1g4c12gmfn.apps.googleusercontent.com",
+			    ClientSecret = "oe3hBYCPsdw2_AyDqXJcWG6v"
+			});
+		}
+	}
 }

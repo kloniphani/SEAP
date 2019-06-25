@@ -1,48 +1,55 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>@ViewBag.Title - My ASP.NET Application</title>
-	@Styles.Render("~/Content/css")
-	@Scripts.Render("~/bundles/modernizr")
-	@Styles.Render("~/Content/Student.css")
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<title>@ViewBag.Title - Application</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="~/Content/Layout/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="~/Content/Layout/animate.css">
+
+	<link rel="stylesheet" href="~/Content/Layout/owl.carousel.min.css">
+	<link rel="stylesheet" href="~/Content/Layout/owl.theme.default.min.css">
+	<link rel="stylesheet" href="~/Content/Layout/magnific-popup.css">
+	<link rel="stylesheet" href="~/Content/Layout/aos.css">
+	<link rel="stylesheet" href="~/Content/Layout/ionicons.min.css">
+	<link rel="stylesheet" href="~/Content/Layout/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="~/Content/Layout/jquery.timepicker.css">
+
+	<link rel="stylesheet" href="~/Content/Layout/flaticon.css">
+	<link rel="stylesheet" href="~/Content/Layout/icomoon.css">
+	<link rel="stylesheet" href="~/Content/Layout/style.css">
+
+	@Styles.Render("~/Content/Student.css")
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li>@Html.ActionLink("Home", "Index", "Home")</li>
-					<li>@Html.ActionLink("About", "About", "Home")</li>
-					<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-					<li>@Html.ActionLink("Assessors", "Assessors", "Home")</li>
-					<li>@Html.ActionLink("Student", "Student", "Home")</li>
-				</ul>
-				@Html.Partial("_LoginPartial")
-			</div>
-		</div>
-	</div>
-	<div class="container body-content">
-		@RenderBody()
-		<hr />
-		<footer>
-			<p>&copy; @DateTime.Now.Year - Application</p>
-		</footer>
-	</div>
+	@Html.Partial("_MainMenu")
+	@RenderBody()
+	@Html.Partial("~/Views/Shared/_Footer.cshtml")
 
-	@Scripts.Render("~/bundles/jquery")
-	@Scripts.Render("~/bundles/bootstrap")
-	@Scripts.Render("~/Scripts/Student.js");
-	@RenderSection("scripts", required: false)
+	<script src="~/Scripts/jquery.min.js"></script>
+	<script src="~/Scripts/jquery-migrate-3.0.1.min.js"></script>
+	<script src="~/Scripts/popper.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+	<script src="~/Scripts/jquery.easing.1.3.js"></script>
+	<script src="~/Scripts/jquery.waypoints.min.js"></script>
+	<script src="~/Scripts/jquery.stellar.min.js"></script>
+	<script src="~/Scripts/owl.carousel.min.js"></script>
+	<script src="~/Scripts/jquery.magnific-popup.min.js"></script>
+	<script src="~/Scripts/aos.js"></script>
+	<script src="~/Scripts/jquery.animateNumber.min.js"></script>
+	<script src="~/Scripts/bootstrap-datepicker.js"></script>
+	<script src="~/Scripts/jquery.timepicker.min.js"></script>
+	<script src="~/Scripts/scrollax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="~/Scripts/google-map.js"></script>
+	<script src="~/Scripts/main.js"></script>
+
+	@Scripts.Render("~/Scripts/Student.js")
+	@RenderSection("Scripts", required: false)
 </body>
 </html>

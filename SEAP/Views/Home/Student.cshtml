@@ -3,18 +3,39 @@
 	ViewBag.Title = "Student";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<section class="ftco-section">
+	<div class="container">
+		<h2>Student</h2>
 
-<h2>Student</h2>
+		<div class="row">
+			<div class="col-md-4" name="Progress">
+				<div class="container">
+					<div class="progress-container">
+						<div class="progress-bar">
+							<div style="width: 50%;"></div>
+						</div>
+						<ul class="progress-step">
+							<li class="complated"></li>
+							<li class="complated"></li>
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" name="Profile">
 
-<div class="row">
-	<div class="col-md-4" name="Progress">
+			</div>
+		</div>
 
+		<div class="row" name="ApplicationPanel">
+			@Html.Partial("_Application")
+		</div>
 	</div>
-	<div class="col-md-4" name="Profile">
+</section>
 
-	</div>
-</div>
-
-<div class="row" name="ApplicationPanel">
-	@Html.Partial("_Application")
-</div>
+@section Scripts	
+{
+	Scripts.Render("~/Scripts/Student.js")
+}
